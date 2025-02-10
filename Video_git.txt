@@ -1,0 +1,61 @@
+1. Definición de Git.
+
+Git es una herramienta de control de versiones distribuido que facilita el seguimiento de cambios en archivos y proyectos de software. Su uso permite que varias personas trabajen en un mismo proyecto sin problemas y con un historial detallado de los cambios que se realizan.
+
+
+2. Comandos esenciales y sus funciones.
+
+git init: Crea un nuevo repositorio en el sistema local.
+git clone <url>: Copia un repositorio remoto en el equipo.
+git add <archivo>: Mueve los cambios al área de preparación.
+git commit -m "mensaje": Registra los cambios con un comentario descriptivo.
+git push: Envía cambios al servidor remoto.
+git branch: Lista las ramas disponibles en el repositorio.
+git checkout -b <nombre_rama>: Genera una nueva rama y cambia a ella.
+git merge <rama>: Une una rama con otra.
+git pull: Descarga y aplica cambios desde el repositorio remoto.
+git status: Indica el estado actual de los archivos.
+git log: Muestra el historial de confirmaciones realizadas.
+
+
+3. Diferencia entre Git y GitHub.
+
+Git es el software que gestiona versiones de código de manera local en la computadora del usuario, mientras que GitHub es una plataforma en línea que permite almacenar, compartir y colaborar en proyectos basados en Git. En pocas palabras la primera es local y la segunda es en la "nube".
+
+
+4. Pasos para subir modificaciones a un repositorio.
+
+git add .
+git commit -m "Descripción"
+git push origin <rama>
+
+
+5. Concepto de branch (rama).
+
+Una rama en Git es una versión paralela del proyecto donde se pueden realizar cambios sin afectar la versión principal. Es útil para desarrollar nuevas funcionalidades o corregir errores antes de integrar los cambios en la rama principal.
+
+
+6. Diferencia entre repositorio local y remoto.
+
+Repositorio local: Se encuentra en la computadora del usuario y almacena todos los cambios realizados en el proyecto.
+Repositorio remoto: Está alojado en plataformas como GitHub y permite sincronizar el trabajo entre distintos colaboradores (guardado en la nube).
+
+
+7. Comandos básicos y su propósito.
+
+Crear un nuevo repositorio: git init
+Descargar un repositorio existente: git clone <url>
+Añadir archivos al área de preparación: git add <archivo> o git add .
+Guardar cambios con un mensaje: git commit -m "mensaje"
+Enviar modificaciones al repositorio remoto: git push origin <rama>
+
+Revertir cambios en una rama:
+Para deshacer el último commit sin perder los cambios: git reset --soft HEAD~1
+Para descartar modificaciones en un archivo específico: git checkout -- <archivo>
+Para revertir un commit en particular: git revert <id_commit>
+
+
+
+
+
+
